@@ -57,16 +57,20 @@ body {
   margin-bottom: 12px;
   padding: 20px;
   padding-top: 0;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
 }
 
 .filter-accordion__second {
   background: #f1f1f1;
-  padding: 25px;
+  padding: 0px;
   align-items: center;
   cursor: pointer;
 }
 
 .filter-accordion__second-wrapper {
+  padding: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -92,7 +96,6 @@ body {
 
 .filter-accordion__second-panel.is-open {
   max-height: 500px;
-  margin-bottom: 12px;
   padding: 20px;
-  padding-top: 0;
+  padding-top: 15px;
 }/*# sourceMappingURL=style.css.map */
