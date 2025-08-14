@@ -74,16 +74,19 @@ body {
   padding: 25px;
   display: flex;
   justify-content: space-between;
+  transition: background 0.5s ease;
 }
 
 .filter-accordion__second-name {
   font-weight: 400;
   font-size: 18px;
   color: #000;
+  transition: color 0.5s ease;
 }
 
 .filter-accordion__second-btn {
   transform: rotate(180deg);
+  transition: rotate 0.5s ease;
 }
 
 .filter-accordion__second-panel {
@@ -101,4 +104,30 @@ body {
   opacity: 1;
   padding: 20px;
   padding-top: 15px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.filter-accordion__second-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  color: #000;
+}
+
+.filter-accordion__second.is-open .filter-accordion__second-wrapper {
+  background: #006ac5;
+}
+
+.filter-accordion__second.is-open .filter-accordion__second-name {
+  color: white;
+}
+
+.filter-accordion__second.is-open .filter-accordion__second-btn {
+  rotate: 180deg;
+}
+
+.filter-accordion__second.is-open .filter-accordion__second-btn svg path {
+  fill: #fff;
 }/*# sourceMappingURL=style.css.map */
