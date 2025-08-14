@@ -33,10 +33,10 @@ body {
   transition: rotate 0.3s ease;
 }
 .filter-accordion__panel {
+  opacity: 0;
+  visibility: hidden;
   background: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: opacity 0.5s ease;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -44,7 +44,8 @@ body {
   rotate: 180deg;
 }
 .filter-accordion__panel.is-open {
-  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
   margin-bottom: 12px;
   padding: 20px;
   padding-top: 0;
@@ -72,15 +73,17 @@ body {
   transform: rotate(180deg);
 }
 .filter-accordion__second-panel {
-  background: white;
   max-height: 0;
+  opacity: 0;
+  background: white;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: opacity 0.5s ease;
   padding-left: 20px;
   padding-right: 20px;
 }
 .filter-accordion__second-panel.is-open {
-  max-height: 500px;
+  max-height: 10000px;
+  opacity: 1;
   padding: 20px;
   padding-top: 15px;
 }
